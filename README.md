@@ -45,12 +45,4 @@ El modelo de Naïve Bayes obtiene una precisión de `X.XX` (reemplazar con el va
 - plotly
 - scikit-learn
 
-## Ejecución
-
-Para ejecutar el código, simplemente clona este repositorio y ejecuta el script en tu entorno local después de instalar las dependencias necesarias.
-
-```bash
-git clone <repositorio>
-cd <repositorio>
-pip install -r requirements.txt
-python <script>.py
+## realisado por: Miguel Angel Rodriguez Hernadez
