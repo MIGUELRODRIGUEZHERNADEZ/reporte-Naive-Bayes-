@@ -1,35 +1,56 @@
-@@ -11,33 +11,29 @@ El propósito principal de este proyecto es aplicar el algoritmo **Naïve Bayes** para predecir el rendimiento académico de los estudiantes basándonos en sus características previas.
- - **Pandas** (para manipulación y análisis de datos)
- - **NumPy** (para operaciones matemáticas y estadísticas)
- - **Scikit-learn** (para implementar el clasificador Naïve Bayes)
- - **Matplotlib** y **Seaborn** (para creación de gráficos y visualización de datos)
+ # Análisis de Datos Aplicables al Teorema de Naïve Bayes
 
- ## 📌 **Descripción del Código**
- ### 🔹 **Versión Inicial (Código Básico)**
- - Implementa el algoritmo **Naïve Bayes** utilizando las bibliotecas estándar de **Scikit-learn**.
- - El entrenamiento y la predicción se realizan de manera directa y sencilla.
- - **Limitaciones:** Código básico sin optimización ni técnicas avanzadas de preprocesamiento.
+Este proyecto utiliza el **Teorema de Naïve Bayes** para predecir el tipo de Pokémon basándose en diversas características como altura, peso, estadísticas de combate y velocidad.
 
- ### 🔹 **Versión Mejorada (Código Optimizado)**
- - **Preprocesamiento de Datos**: Se gestionan los valores faltantes, se realiza la codificación de variables categóricas y se normalizan los datos para mejorar el rendimiento del modelo.
- - **Ajuste de Hiperparámetros**: Se optimizan los parámetros clave del modelo ajustando la tasa de aprendizaje y la división de los datos para entrenar y probar el modelo.
- - **Mejoras en la Visualización**: Se presentan los resultados de manera visual mediante gráficos y tablas, facilitando el análisis de desempeño.
+## Objetivo
 
- ## 📌 **Implementación del Algoritmo**
- - Se utiliza el algoritmo **Naïve Bayes** con las bibliotecas estándar de **Scikit-learn**.
- - **Preprocesamiento de Datos**: Se abordan los valores nulos, se codifican las variables categóricas y se normalizan los datos para mejorar la precisión del modelo.
- - **Entrenamiento y Evaluación**: El conjunto de datos se divide en entrenamiento y prueba para evaluar el desempeño del clasificador.
- - **Visualización de Resultados**: Los resultados se presentan a través de gráficos y tablas para facilitar la interpretación de la precisión y desempeño del modelo.
+El objetivo de este análisis es clasificar a los Pokémon en sus respectivos tipos utilizando un modelo de clasificación basado en Naïve Bayes. El modelo es entrenado con un conjunto de datos (Pokedex) y luego evaluado con métricas como precisión, reporte de clasificación y matriz de confusión.
 
- ## 📊 **Resultados y Evaluación**
- - El modelo Naïve Bayes tiene una precisión del 78% en la clasificación de las calificaciones finales de los estudiantes, obteniendo buenos resultados en el conjunto de prueba.
- - **Errores Comunes**: El modelo presenta una mayor cantidad de **falsos negativos**, donde algunos estudiantes con buenas calificaciones son clasificados incorrectamente.
- - **Optimización**: La normalización de los datos contribuye a una mayor estabilidad en los resultados del modelo.
+## Librerías Utilizadas
 
- ## ✅ **Conclusión**
- Este proyecto muestra la capacidad del **algoritmo Naïve Bayes** para clasificar las calificaciones finales de los estudiantes, especialmente cuando los datos son fácilmente separables en categorías. La versión optimizada mejora tanto la precisión como la estabilidad del modelo, ofreciendo una experiencia de usuario más consistente y confiable.
- Este proyecto resalta la efectividad del **algoritmo Naïve Bayes** para predecir las calificaciones finales de estudiantes, logrando buenos resultados con un modelo preciso y estable.
+- **Pandas**: Para la manipulación y análisis de datos.
+- **NumPy**: Para trabajar con arrays y matrices.
+- **Matplotlib** y **Seaborn**: Para visualización estática de datos.
+- **Plotly**: Para visualización interactiva de datos.
+- **Scikit-learn**: Para el preprocesamiento de datos, creación de modelos y evaluación.
 
+## Pasos Realizados
 
+1. **Carga y Preprocesamiento de Datos**: 
+   - El dataset es cargado desde un archivo CSV y se realiza una limpieza básica, como la normalización de los tipos de Pokémon.
+   - Se codifican los tipos de Pokémon utilizando `LabelEncoder` para su uso en el modelo.
 
- 📌 **Autor:** *Miguel Angel Rodriguez Hernadez*
+2. **Entrenamiento del Modelo**: 
+   - Se seleccionan las características más relevantes (altura, peso, estadísticas de combate, etc.) y se divide el conjunto de datos en entrenamiento y prueba.
+   - Se entrena un modelo de Naïve Bayes utilizando el conjunto de entrenamiento.
+
+3. **Evaluación del Modelo**: 
+   - Se predicen los tipos de los Pokémon en el conjunto de prueba y se evalúa el rendimiento utilizando la precisión, el reporte de clasificación y la matriz de confusión.
+
+4. **Visualización**:
+   - Se visualiza la matriz de confusión para mostrar cómo el modelo predice las clases en comparación con los valores reales.
+   - Se realiza un análisis multivariable con una gráfica 3D interactiva para explorar la relación entre el ataque, defensa y velocidad de los Pokémon.
+
+## Resultados
+
+El modelo de Naïve Bayes obtiene una precisión de `X.XX` (reemplazar con el valor de precisión real) en la predicción de tipos de Pokémon. La matriz de confusión y el reporte de clasificación proporcionan más detalles sobre su rendimiento.
+
+## Requisitos
+
+- Python 3.x
+- pandas
+- numpy
+- matplotlib
+- seaborn
+- plotly
+- scikit-learn
+
+## Ejecución
+
+Para ejecutar el código, simplemente clona este repositorio y ejecuta el script en tu entorno local después de instalar las dependencias necesarias.
+
+```bash
+git clone <repositorio>
+cd <repositorio>
+pip install -r requirements.txt
+python <script>.py
